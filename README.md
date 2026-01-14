@@ -1,3 +1,13 @@
+---
+title: Guava Leaf Disease Detection
+emoji: 🌿
+colorFrom: green
+colorTo: blue
+sdk: docker
+app_file: app.py
+pinned: false
+---
+
 # Guava Leaf Disease Detection
 
 Web application for detecting guava leaf diseases using deep learning models (ResNet, AlexNet, VGG, SqueezeNet, DenseNet, Inception, EfficientNet-B0).
