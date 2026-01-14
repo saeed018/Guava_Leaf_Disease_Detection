@@ -12,6 +12,10 @@ pinned: false
 
 Web application for detecting guava leaf diseases using deep learning models (ResNet, AlexNet, VGG, SqueezeNet, DenseNet, Inception, EfficientNet-B0).
 
+## Live Demo
+
+🌐 [Try the live application](https://abusaeed018-guava-leaf-disease-detection.hf.space/)
+
 ## Features
 
 - Multi-model prediction with consensus voting
@@ -41,15 +45,17 @@ python app.py
 ## Deployment
 
 ### Hugging Face Spaces
-bash
-git push origin main
+```bash
+git push
+```
 
 Configure with app.py as the main application file.
 
 ### Docker
-bash
+```bash
 docker build -t guava-disease .
 docker run -p 7860:7860 guava-disease
+```
 
 
 ## Technologies
