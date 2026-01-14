@@ -27,13 +27,20 @@ pip install -r requirements.txt
 python app.py
 ```
 
+
 ## Deployment
 
+### Hugging Face Spaces
+bash
+git push origin main
+
+Configure with app.py as the main application file.
+
 ### Docker
-```bash
+bash
 docker build -t guava-disease .
 docker run -p 7860:7860 guava-disease
-```
+
 
 ## Technologies
 
