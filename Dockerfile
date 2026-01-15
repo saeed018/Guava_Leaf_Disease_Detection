@@ -21,5 +21,6 @@ EXPOSE 7860
 ENV FLASK_APP=app.py
 ENV PORT=7860
 
+# Trigger rebuild
 # Run the application
 CMD gunicorn -b 0.0.0.0:7860 -w 1 --timeout 120 app:app
