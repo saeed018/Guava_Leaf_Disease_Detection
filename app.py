@@ -35,7 +35,7 @@ def initialize_model(model_name, num_classes):
     model_ft = None
     
     if model_name == "resnet":
-        model_ft = models.resnet18(pretrained=False)
+        model_ft = models.resnet50(pretrained=False)
         num_ftrs = model_ft.fc.in_features
         model_ft.fc = nn.Linear(num_ftrs, num_classes)
         
@@ -45,7 +45,7 @@ def initialize_model(model_name, num_classes):
         model_ft.classifier[6] = nn.Linear(num_ftrs, num_classes)
         
     elif model_name == "vgg":
-        model_ft = models.vgg11_bn(pretrained=False)
+        model_ft = models.vgg16_bn(pretrained=False)
         num_ftrs = model_ft.classifier[6].in_features
         model_ft.classifier[6] = nn.Linear(num_ftrs, num_classes)
         
@@ -55,7 +55,7 @@ def initialize_model(model_name, num_classes):
         model_ft.num_classes = num_classes
         
     elif model_name == "densenet":
-        model_ft = models.densenet121(pretrained=False)
+        model_ft = models.densenet169(pretrained=False)
         num_ftrs = model_ft.classifier.in_features
         model_ft.classifier = nn.Linear(num_ftrs, num_classes)
         
@@ -67,7 +67,7 @@ def initialize_model(model_name, num_classes):
         model_ft.fc = nn.Linear(num_ftrs, num_classes)
         
     elif model_name == "efficientnet_b0":
-        model_ft = models.efficientnet_b0(pretrained=False)
+        model_ft = models.efficientnet_b1(pretrained=False)
         num_ftrs = model_ft.classifier[1].in_features
         model_ft.classifier[1] = nn.Linear(num_ftrs, num_classes)
     
@@ -86,11 +86,11 @@ def load_models():
                 model.to(DEVICE)
                 model.eval()
                 loaded_models[model_name] = model
-                print(f"✓ {model_name} loaded successfully")
+                print(f"[OK] {model_name} loaded successfully")
             else:
-                print(f"✗ Model file not found: {model_path}")
+                print(f"[FAILED] Model file not found: {model_path}")
         except Exception as e:
-            print(f"✗ Error loading {model_name}: {str(e)}")
+            print(f"[FAILED] Error loading {model_name}: {str(e)}")
     
     print(f"\nTotal models loaded: {len(loaded_models)}/{len(MODEL_CONFIGS)}")
 

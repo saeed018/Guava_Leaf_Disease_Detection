@@ -232,9 +232,16 @@ header h1 {
 
 .predictions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 24px;
     margin-bottom: 40px;
+}
+
+/* Show four cards per row on wide screens */
+@media (min-width: 1100px) {
+    .predictions-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .prediction-card {
