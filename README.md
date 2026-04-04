@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-title: Guava Leaf Disease Detection
+
+## title: Guava Leaf Disease Detection
 emoji: 🌿
 
 # Guava Leaf Disease Detection
