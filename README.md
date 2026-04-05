@@ -33,63 +33,7 @@ This project builds an automated **guava leaf disease classification** system us
 
 **Why EfficientNet performed best:** It uses balanced scaling (depth/width/resolution) plus efficient MBConv blocks and attention (SE), which helps capture fine leaf texture patterns and generalize well on a moderate-size dataset.
 
-## 🗂️ Project Structure (Suggested)
-
-guava-leaf-disease-detection/
-│
-├── data/ # (not included) dataset folder
-│ ├── train/
-│ ├── val/
-│ └── test/
-│
-├── notebooks/ # optional Jupyter notebooks
-├── src/ # training / evaluation scripts
-│ ├── train.py
-│ ├── evaluate.py
-│ ├── utils.py
-│ └── config.py
-│
-├── app/ # web app code (Streamlit/Flask/etc.)
-│ └── app.py
-│
-├── results/ # plots, confusion matrices, metrics
-├── requirements.txt
-└── README.md
-
-
-## ⚙️ Installation
-1) Clone the repo:
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-Create and activate a virtual environment (recommended):
-python -m venv venv
-# Windows:
-venv\Scripts\activate
-# Mac/Linux:
-source venv/bin/activate
-Install dependencies:
-pip install -r requirements.txt
-🚀 How to Train
-
-Example (update command to match your script names):
-
-python src/train.py --model efficientnet --epochs 15 --batch_size 32
-📊 How to Evaluate
-python src/evaluate.py --model efficientnet --weights path/to/best_model.pth
-🖥️ Run the Web App
-
-(If you used Streamlit)
-
-streamlit run app/app.py
-
-(If you used Flask)
-
-python app/app.py
-
-Then open the shown local URL and upload a guava leaf image to get the prediction.
-
-✅ Output
+## output
 Predicted class: Healthy / Canker / Dot / Mummification / Rust
 Confidence score
 Evaluation: accuracy, loss, precision, recall, F1-score, confusion matrix
