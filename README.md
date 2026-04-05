@@ -8,18 +8,6 @@ This project builds an automated **guava leaf disease classification** system us
 - Evaluation with **Accuracy, Loss, Precision, Recall, F1-score, Confusion Matrix**
 - **Simple web interface** for image upload and prediction
 
-## 📌 Dataset
-- Source: Kaggle guava leaf dataset  
-- Total images: **2299**
-- Class distribution (approx.):  
-  - Healthy: 469  
-  - Canker: 455  
-  - Mummification: 430  
-  - Dot: 470  
-  - Rust: 475  
-
-> Note: Please do not upload the dataset images to GitHub. Instead, download from Kaggle and place them in the `data/` folder (see structure below).
-
 ## 🧠 Models and Results (Summary)
 | Model | Test Accuracy | Test Loss |
 |---|---:|---:|
