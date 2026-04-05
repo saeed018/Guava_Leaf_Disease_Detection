@@ -20,7 +20,8 @@ This project builds an automated **guava leaf disease classification** system us
 | Inception-v3 | 86.24% | 0.3599 |
 
 **Why EfficientNet performed best:** It uses balanced scaling (depth/width/resolution) plus efficient MBConv blocks and attention (SE), which helps capture fine leaf texture patterns and generalize well on a moderate-size dataset.
-
+## Software Interface: 
+I developed a user-friendly web app where a user uploads a guava leaf image, the trained CNN model performs inference in the backend, and the app displays the predicted class (Healthy/Canker/Dot/Mummification/Rust) along with confidence.
 ## output
 Predicted class: Healthy / Canker / Dot / Mummification / Rust
 Confidence score
@@ -32,4 +33,3 @@ Mobile app deployment for farmers
 Real-time monitoring and alert system
 🙏 Acknowledgement
 
-Thanks to the dataset providers and the research community. Special thanks to my supervisor and committee members for guidance and support.
