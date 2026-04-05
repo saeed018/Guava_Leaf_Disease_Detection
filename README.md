@@ -31,5 +31,5 @@ Larger and more diverse datasets (real field conditions)
 More disease types and architectures
 Mobile app deployment for farmers
 Real-time monitoring and alert system
-🙏 Acknowledgement
+
 
